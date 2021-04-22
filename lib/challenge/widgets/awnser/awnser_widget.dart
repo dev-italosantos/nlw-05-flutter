@@ -15,27 +15,62 @@ class AwmserWidget extends StatelessWidget {
       this.isSelectd = false})
       : super(key: key);
 
+  Color get _selectedColorRight =>
+      isRight ? AppColors.darkGreen : AppColors.darkRed;
+  Color get _selectedBorderRight =>
+      isRight ? AppColors.lightGreen : AppColors.lightRed;
+  Color get _selectedColorCardRight =>
+      isRight ? AppColors.lightGreen : AppColors.lightRed;
+  Color get _selectedBorderCardRight =>
+      isRight ? AppColors.green : AppColors.red;
+  TextStyle get _selectedTextStyleRight =>
+      isRight ? AppTextStyles.bodyDarkGreen : AppTextStyles.bodyDarkRed;
+  IconData get _selectedIconRight => isRight ? Icons.check : Icons.close;
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(16),
-      decoration: BoxDecoration(
-          color: AppColors.white,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      child: Container(
+        padding: EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: isSelectd ? _selectedColorCardRight : AppColors.white,
           borderRadius: BorderRadius.circular(10),
-          border: Border.fromBorderSide(BorderSide(color: AppColors.border))),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            title,
-            style: AppTextStyles.body,
+          border: Border.fromBorderSide(
+            BorderSide(
+                color: isSelectd ? _selectedBorderCardRight : AppColors.red),
           ),
-          Container(
-            width: 24,
-            height: 24,
-            child: Icon(Icons.check),
-          )
-        ],
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              child: Text(title,
+                  style:
+                      isSelectd ? _selectedTextStyleRight : AppTextStyles.body),
+            ),
+            Container(
+              width: 24,
+              height: 24,
+              decoration: BoxDecoration(
+                color: isSelectd ? _selectedColorRight : AppColors.darkGreen,
+                borderRadius: BorderRadius.circular(500),
+                border: Border.fromBorderSide(
+                  BorderSide(
+                      color:
+                          isSelectd ? _selectedBorderRight : AppColors.border),
+                ),
+              ),
+              child: isSelectd
+                  ? Icon(
+                      _selectedIconRight,
+                      size: 16,
+                      color: Colors.white,
+                    )
+                  : null,
+            )
+          ],
+        ),
       ),
     );
   }
