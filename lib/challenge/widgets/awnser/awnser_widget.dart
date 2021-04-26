@@ -3,12 +3,12 @@ import 'package:dev_quiz/core/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class AwmserWidget extends StatelessWidget {
+class AwnserWidget extends StatelessWidget {
   final String title;
   final bool isRight;
   final bool isSelectd;
 
-  const AwmserWidget(
+  const AwnserWidget(
       {Key? key,
       required this.title,
       this.isRight = false,
