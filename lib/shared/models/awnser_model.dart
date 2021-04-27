@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 class AwnserModel {
-  final String? title;
+  final String title;
   final bool isRight;
 
   AwnserModel({
