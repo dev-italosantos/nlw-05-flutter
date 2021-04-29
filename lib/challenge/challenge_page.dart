@@ -28,7 +28,7 @@ class _ChallengePageState extends State<ChallengePage> {
     super.initState();
   }
 
-  void nextPage(bool value) {
+  void nextPage() {
     if (controller.currentPage < widget.questions.length)
       pageController.nextPage(
         duration: Duration(milliseconds: 100),
@@ -106,6 +106,7 @@ class _ChallengePageState extends State<ChallengePage> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => ResultPage(
+                              result: controller.qtdAnwserRight,
                               title: widget.title,
                               lenght: widget.questions.length,
                             ),
