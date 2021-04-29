@@ -23,6 +23,7 @@ samples, guidance on mobile development, and a full API reference.
 
 The design was created by Rockeatset and can be found at https://www.figma.com/file/R9It1jsp9U1qDJc7tUAfUW/DevQuiz-Copy?node-id=0%3A1
 
+<p align="center">
 <img width="375" alt="Splash" src="https://user-images.githubusercontent.com/62223794/116496070-91c4c380-a87a-11eb-9c76-d0359f6e7b1f.png">
 <img width="375" alt="Home (zero data)" src="https://user-images.githubusercontent.com/62223794/116496034-81ace400-a87a-11eb-8c1d-c607be7aded7.png">
 <img width="375" alt="Home" src="https://user-images.githubusercontent.com/62223794/116496037-81ace400-a87a-11eb-8785-871319d2baea.png">
@@ -30,7 +31,7 @@ The design was created by Rockeatset and can be found at https://www.figma.com/f
 <img width="375" alt="Certo" src="https://user-images.githubusercontent.com/62223794/116496031-81144d80-a87a-11eb-862f-9168128bf61f.png">
 <img width="375" alt="Errado" src="https://user-images.githubusercontent.com/62223794/116496033-81144d80-a87a-11eb-93cd-b4a0c2f3d5ff.png">
 <img width="375" alt="Parabéns" src="https://user-images.githubusercontent.com/62223794/116496021-7e195d00-a87a-11eb-8550-9457da438fcb.png">
-
+</p>
 
 ## 🔗 Find me!
 - Linkedin: https://www.linkedin.com/in/italo-santos-dev/
